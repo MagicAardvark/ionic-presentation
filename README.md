@@ -1,4 +1,12 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+This is a slide deck built in Ionic 3 that can be used to present on Ionic v3 (with a sneak peak to v4)
+ 
+ Features include:-
+ - Native vs Hybrid
+ - Intro to Ionic
+ - Ionic CLI
+ - Ionic Pro
+ - Ionic for P.W.As
+ - Ionic v4 preview
 
 ## How to use this template
 
