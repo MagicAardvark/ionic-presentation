@@ -1,14 +1,493 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+<ion-content>
+  <ion-slides pager>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+    <ion-slide>
+      <img src="assets/ionic-logo.png" class="logo" />
+      <h1>Building Hybrid Apps with Angular and Ionic</h1>
+    </ion-slide>
+
+    <ion-slide class="profile">
+      <div>
+        <img src="assets/me.jpg" />
+        <ul>
+          <li>Kyle Murray</li>
+          <li>UI Developer at Bullhorn</li>
+          <li><a href="https://twitter.com/MagicAardavrk">@MagicAardvark</a></li>
+          <li><a href="https://github.com/MagicAardavrk">github.com/MagicAardavrk</a></li>
+        </ul>
+      </div>
+
+    </ion-slide>
+
+    <ion-slide>
+      <section>
+        <h2>Overview</h2>
+        <ol>
+          <li>Native vs Hybrid Apps</li>
+          <li>Intro Ionic</li>
+          <li>UI Components</li>
+          <li>Ionic CLI</li>
+          <li>Demos</li>
+        </ol>
+      </section>
+    </ion-slide>
+
+    <ion-slide>
+      <section>
+        <blockquote>
+          &ldquo;I want to build a native app!&rdquo;
+        </blockquote>
+      </section>
+    </ion-slide>
+
+    <ion-slide class="native">
+      <section>
+        <h3>More Platforms. More Problems.</h3>
+        <ul>
+          <li>Proficiency in each platform required</li>
+          <li>Entirely separate code bases</li>
+          <li>Timely &amp; expensive development</li>
+          <li>Diminishing returns</li>
+        </ul>
+        <p style="margin-top: 60px">
+          <img src="assets/apple.png">
+          <img src="assets/android.png">
+          <img src="assets/windows.png">
+          <img src="assets/blackberry.png">
+        </p>
+      </section>
+    </ion-slide>
+
+    <ion-slide class="hybridapps">
+      <section>
+        <h3 style="font-size: 80px" text-uppercase>Hybrid Apps!</h3>
+        <p style="font-size: 32px"><strong>HTML5</strong> that acts like native</p>
+        <p style="font-size: 32px">Web wrapped in <strong>native layer</strong></p>
+        <p style="font-size: 32px">Direct access to <strong>native APIs</strong></p>
+        <p style="font-size: 32px">Familiar <strong>web dev</strong> environment</p>
+        <p style="font-size: 32px">A <strong>single code base</strong> (web platform!)</p>
+      </section>
+    </ion-slide>
+
+
+    <ion-slide>
+      <section>
+        <h3 style="font-size: 80px">&ldquo;Hybrid apps suck!&rdquo;</h3>
+        <p style="font-size: 32px; padding-top: 30px;text-align: center;">Mark Zuckerberg <i>(2012)</i>: <br/>&ldquo;Our Biggest Mistake Was Betting Too Much On HTML5&rdquo;</p>
+      </section>
+    </ion-slide>
+
+    <ion-slide class="backgroundimage">
+      <section>
+        <img src="assets/oldphones.jpg" />
+        <blockquote style="font-size: 80px; font-family:Georgia; text-shadow: 5px 0 15px rgba(0,0,0,.7)">
+          &ldquo;It's not 2007 anymore&rdquo;
+        </blockquote>
+      </section>
+    </ion-slide>
+
+
+
+    <ion-slide class="iphonespecs">
+      <section>
+        <table>
+          <tr>
+            <th>Year</th>
+            <th>Device</th>
+            <th>Processor</th>
+            <th>RAM</th>
+          </tr>
+          <tr>
+            <td>2007</td>
+            <td>iPhone</td>
+            <td>400 MHz</td>
+            <td>128 MB</td>
+          </tr>
+          <tr>
+            <td>2010</td>
+            <td>iPhone 4</td>
+            <td>1 GHz</td>
+            <td>512 MB</td>
+          </tr>
+          <tr>
+            <td>2015</td>
+            <td>iPhone 6</td>
+            <td>1.4 GHz dual-core</td>
+            <td>1 GB</td>
+          </tr>
+          <tr>
+            <td>2017</td>
+            <td>iPhone 7</td>
+            <td>2.3 GHz quad-core</td>
+            <td>2 GB</td>
+          </tr>
+        </table>
+      </section>
+    </ion-slide>
+
+
+
+    <ion-slide>
+      <section text-center>
+        <h4 style="font-size:50px; margin:0;">Web-standards</h4>
+        <h4 style="font-size:80px;text-transform:uppercase">Have improved!</h4>
+        <p style="font"><a href="http://caniuse.com/">caniuse.com</a> is lookin' pretty good nowadays</p>
+        <p>Android is now <strong>Chromium-based</strong></p>
+        <p>iOS users keep their devices <strong>up-to-date</strong></p>
+
+        <p style="text-align:center;">
+          <img src="assets/caniuse-querySelector.png" width=460 class="logo">
+          <img src="assets/caniuse-flexbox.png" width=460 class="logo">
+        </p>
+      </section>
+    </ion-slide>
+
+
+    <ion-slide class="white">
+      <section>
+        <img src="assets/ios adoption.png">
+      </section>
+    </ion-slide>
+
+
+    <ion-slide class="white androidstats">
+      <section>
+        <img src="assets/android dist.png">
+      </section>
+    </ion-slide>
+
+
+
+    <ion-slide>
+      <section>
+        <h2 style="font-size:2.2em;">Building Apps</h2>
+      </section>
+    </ion-slide>
+
+
+    <ion-slide class="nativesdks">
+      <section text-center>
+        <h3 style="margin:0">Native SDKs...</h3>
+        <h2 style="font-size:2.2em;">Are Great!</h2>
+        <p style="margin:30px auto 20px auto">
+          Common UI, APIs, views, navigation, stack history, <br/>transitions, interactions, gestures, etc.
+        </p>
+        <img src="assets/native-sdk.png" style="width:66%">
+      </section>
+    </ion-slide>
+
+    <ion-slide>
+      <section>
+        <img src="assets/websdk.png" />
+      </section>
+    </ion-slide>
+
+
+    <ion-slide class="white">
+      <section>
+        <img src="assets/ionic-logo.svg" style="width:750px;">
+      </section>
+    </ion-slide>
+
+
+    <ion-slide>
+      <section>
+        <img src="assets/websdk2.png" style="width:100%">
+      </section>
+    </ion-slide>
+
+
+    <ion-slide>
+      <section text-center>
+        <h3 style="margin:0; font-size:32px">Web Technologies You Already</h3>
+        <h2 style="font-size: 85px;">Know &amp; Love</h2>
+        <div style="margin-top: 30px">
+          <img src="assets/html.png" class="logo" width="185" height="260">
+          <img src="assets/css.png" class="logo" width="185" height="260" style="margin-left: 80px; margin-right: 80px;">
+          <img src="assets/js.png" class="logo" width="185" height="260">
+        </div>
+        <p style="margin-top: 30px; opacity: 0.6">
+          (You'll feel right at home)
+        </p>
+      </section>
+    </ion-slide>
+
+    <ion-slide class="backgroundimage">
+      <section text-center>
+        <img src="assets/angular-bg.png" />
+        <h3 style="font-size:42px; margin:0">Superpowered by</h3>
+        <h2 style="font-size:90px;">Angular</h2>
+        <p style="margin-top:60px;"><strong>Extends the HTML</strong> vocabulary</p>
+        <p>Proven for <strong>large-scale</strong> app development</p>
+        <p>UI Components using <strong>Directives &amp; Services</strong></p>
+      </section>
+    </ion-slide>
+
+
+    <ion-slide class="backgroundimage">
+      <section text-center>
+        <img src="assets/sass.png" />
+        <h2 style="font-size:3em; text-transform: none;">Sass!</h2>
+        <p>CSS generated from the <strong>Sass preprocessor</strong></p>
+        <p>Quickly give your app its own <strong>look and feel</strong></p>
+        <p>CSS designed to be <strong>easily overridden</strong></p>
+        <p><strong>Variables based</strong> with default settings</p>
+      </section>
+    </ion-slide>
+
+
+    <ion-slide class="backgroundimage together">
+      <section>
+        <img src="assets/phones-stacked.png" />
+        <h2 style="color:black; margin-bottom: 50px">How it all comes together</h2>
+        <ul class="stack">
+          <li style="background: #20ab93">Your App</li>
+          <li style="background: #4c8df5">Ionic</li>
+          <li style="background: #d94442">Angular</li>
+          <li style="background: #3b4854">WebView (Cordova)</li>
+          <li style="background: #d4deee; color: #3b4854;">Native App</li>
+        </ul>
+      </section>
+    </ion-slide>
+
+
+    <ion-slide class="grey">
+      <section>
+        <img src="assets/continuity.png" />
+      </section>
+    </ion-slide>
+
+    <ion-slide class="icons">
+      <section text-center>
+        <h2>Ionicons</h2>
+        <img src="assets/ionicons.png">
+        <p>900+ MIT licensed font-icons included</p>
+        <p><a href="http://ionicons.com/" target="_blank">ionicons.com</a></p>
+      </section>
+    </ion-slide>
+
+    <ion-slide class="white">
+      <section text-center>
+        <h2>Fantastic Documentation</h2>
+        <a href="http://ionicframework.com/docs/components/#navigation" target="_blank">
+          <img src="assets/ionicpage.png" style="max-height:800px"/>
+        </a>
+      </section>
+    </ion-slide>
+
+
+    <ion-slide>
+      <section>
+        <img src="assets/focus-on-app.png" />
+      </section>
+    </ion-slide>
+
+
+    <ion-slide class="white cli">
+      <section>
+        <h2>Ionic CLI</h2>
+        <table>
+          <tr>
+            <td><span>ionic serve</span></td>
+            <td>Test in the browser</td>
+          </tr>
+          <tr>
+            <td><span>ionic build</span></td>
+            <td>Builds .apk/.ipa file</td>
+          </tr>
+          <tr>
+            <td><span>ionic emulate</span></td>
+            <td>Runs app in an emulator</td>
+          </tr>
+          <tr>
+            <td><span>ionic run</span></td>
+            <td>Builds & Deploys to a device</td>
+          </tr>
+        </table>
+      </section>
+    </ion-slide>
+
+
+    <ion-slide class="white cli cli2">
+      <section>
+        <h2>Ionic CLI - Part 2</h2>
+        <table>
+          <tr>
+            <td><span>ionic g page MyPage</span></td>
+            <td>generates a new page component called MyPage</td>
+          </tr>
+          <tr>
+              <td><span>ionic g component MyComp</span></td>
+              <td>generates a new component called MyComp</td>
+          </tr>
+          <tr>
+              <td><span>ionic g provider MyProvider</span></td>
+              <td>generates a new provider called MyProvider</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>... and much more!</td>
+          </tr>
+        </table>
+      </section>
+    </ion-slide>
+
+
+    <ion-slide class="pro">
+      <section>
+        <h2>*BRAND NEW* - Ionic Pro!</h2>
+        <p>Cloud based tool suite, focussed on developing and testing</p>
+        <ul>
+          <li>
+            Build your projects in the cloud!
+          </li>
+          <li>
+            Full Git integrations
+          </li>
+          <li>
+            Hot Deploys
+          </li>
+          <li>
+            Ionic View
+          </li>
+        </ul>
+      </section>
+    </ion-slide>
+
+    <ion-slide class="white pwa">
+      <section text-center>
+        <img src="assets/pwa-header-img.jpg"/>
+        <ul>
+          <li>...App like experience...</li>
+          <li>...Works everywhere...</li>
+          <li>...Service Workers for offline caching...</li>
+        </ul>
+
+        <h3>Ionic - build once use everywhere!</h3>
+        <p>iOS - Android - Windows - P.W.A - Web Page</p>
+      </section>
+    </ion-slide>
+
+    <ion-slide class="white">
+      <section text-center>
+        <p><code style="font-size: 1.2em;" class="ionic-blue">npm install -g ionic cordova</code></p>
+        <img src="assets/cli.png" height="220" style="border: 0">
+        <p class="ionic-blue">Boilerplate <strong>app structure</strong> ready for customization</p>
+        <p class="ionic-blue"><strong>LiveReload</strong> both local and native builds</p>
+        <p class="ionic-blue">Build and run <strong>native apps</strong></p>
+      </section>
+    </ion-slide>
+
+    <ion-slide class="dark demotime">
+      <section text-center>
+        <h2 style="color:#32b83b;font-family:Monaco;"><strong>Demo Time!</strong></h2>
+        <h6 style="color:#32b83b;font-family:Monaco;">What is the worst that can happen?</h6>
+      </section>
+    </ion-slide>
+
+    <ion-slide class="references">
+      <section text-center>
+        <h3 style="padding-bottom: 25px;">Get Started with Ionic!</h3>
+
+        <p>
+          <strong>Getting started guide</strong>
+          <br />
+          <a href="hhttp://ionicframework.com/getting-started/" target="_blank">
+              <span class="light-text">ionicframework.com/getting-started</span>
+            </a>
+        </p>
+        <p>
+          <strong>Documentation</strong>
+          <br />
+          <a href="http://ionicframework.com/docs/" target="_blank">
+              <span class="light-text">ionicframework.com/docs</span>
+            </a>
+        </p>
+
+        <p>
+          <strong>Visit the Community Forum</strong>
+          <br />
+          <a href="http://forum.ionicframework.com/" target="_blank">
+              <span class="light-text">forum.ionicframework.com</span>
+            </a>
+        </p>
+
+        <p>
+          <strong>Contribute on GitHub</strong>
+          <br />
+          <a href="https://github.com/driftyco/ionic" target="_blank">
+              <span class="light-text">github.com/driftyco/ionic</span>
+            </a>
+        </p>
+
+        <p>
+          <strong>Join Slack</strong>
+          <br />
+          <a href="https://ionic-worldwide.slack.com" target="_blank">
+              <span class="light-text">ionic-worldwide.slack.com</span>
+            </a>
+        </p>
+      </section>
+    </ion-slide>
+
+    <ion-slide class="dark backgroundimage stencil">
+        <section text-center>
+          
+        </section>
+      </ion-slide>
+    
+    
+      <ion-slide class="dark stencil2">
+        <section text-center>
+          <h1>Stencil.js</h1>
+          <p>Stencil is not a framework, but a compiler. <br/>Taking in TSX files and producing standard web components</p>
+        </section>
+      </ion-slide>
+
+
+      <ion-slide class="dark stencil2">
+        <section text-center>
+          <p>"Why is this so good?"</p>
+        </section>
+      </ion-slide>
+
+      <ion-slide class="dark stencil2">
+        <section>
+          <ul>
+            <li>Vanilla JavaScript... no dependencies!</li>
+            <li>Efficient one-way data binding</li>
+            <li>An asynchronous rendering pipeline (similar to React Fiber)</li>
+            <li>Works with any framework. or no framework at all</li>
+          </ul>
+        </section>
+      </ion-slide>
+
+      <ion-slide class="dark stencil2">
+        <section text-center>
+          <p>Ionic V4 will utilize Stencil.js</p>
+        </section>
+      </ion-slide>
+
+      <ion-slide class="dark stencil2">
+        <section text-center>
+          <img src="assets/ionic-logo.png"/>
+          <img src="assets/stencil.png"/>
+          <p>Ionic V4 will be compatible with Angular, React, VueJS... pretty much what you want!</p>
+        </section>
+      </ion-slide>
+
+    <ion-slide class="profile">
+      <div>
+        <img src="assets/me.jpg" />
+        <ul>
+          <li>Kyle Murray</li>
+          <li>UI Developer at Bullhorn</li>
+          <li><a href="https://twitter.com/MagicAardavrk">@MagicAardvark</a></li>
+          <li><a href="https://github.com/MagicAardavrk">github.com/MagicAardavrk</a></li>
+        </ul>
+      </div>
+      <h1>Questions?</h1>
+    </ion-slide>
+
+  </ion-slides>
 </ion-content>

@@ -1,3 +1,252 @@
 page-home {
+    ion-slides {
+        background: #3374de;
+        color: #fff;
+        ion-slide section{
+            margin: auto;
+            width: auto;
+            padding: 80px;
+            display: inline-block;
+            font-size: 40px;
+            text-align: left;
+            line-height: 1.5em;
+            white-space: nowrap;
+            p {
+                white-space: normal;
+            }
+            a {
+                color: #fff;
+            }
+            h1, h2, h3{
+                font-size: 50px;
+                text-align: center;
+            }
+        }
+        ion-slide {
+            &.white {
+                background-color: #fff;
+                color: #222;
+            }
+            &.grey {
+                background-color: #eff1f5;
+                color: #222;
+            }
+            &.dark {
+                background-color: #232323;
+            }
+            &.backgroundimage {
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: -1;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .list-demo{
+                max-width: 500px;
+                max-height: 80%;
+                overflow-y: auto;
+            }
+        }
+        h1 {
+            font-size: 2em;
+            text-transform: uppercase;
+        }
+        .logo {
+            height: 300px;
+            margin-bottom: 50px;
+        }
 
+        .profile{
+            > div {
+                max-width: 900px;
+                margin: auto;
+                font-size: 2em;
+                text-align: left;
+            }
+            img{
+                width: 300px;
+                float: left;
+                border-radius: 40px;
+                margin-right: 80px;
+            }
+            ul {
+                //list-style: none;
+                padding-top: 40px;
+                li {
+                    line-height: 2em;
+                    a {
+                        color: #fff;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        .native {
+            p {
+                text-align: center;
+                img {
+                    width: 160px;
+                    padding: 0 20px;
+                }
+            }
+        }
+
+        ion-slide.hybridapps section{
+            text-align: center!important;
+        }
+
+        .iphonespecs {
+            table{
+                td, th {
+                    padding: 10px 30px;
+                }
+                td {
+                    border-right: 1px solid #ccc;
+                }
+            }
+        }
+
+        .androidstats {
+            img{
+                max-height: 600px;
+            }
+        }
+
+        .nativesdks {
+            section{
+                min-width: 90%;
+            }
+        }
+
+        .together {
+            h2 {
+                text-transform: uppercase;
+                font-weight: 200;
+                font-size: 2em;
+            }
+            section{
+                min-width: 900px;
+            }
+            ul {
+                list-style: none;
+                width: 460px;
+                li {
+                    padding: 5px 20px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        .icons {
+            img {
+                max-height: 500px;
+            }
+        }
+
+        .demotime section{
+            h2 {
+                font-size: 2em;
+            }
+            h6 {
+                font-size: 1em;
+            }
+            
+        }
+
+        .references{
+            p {
+                font-size: 3rem;
+                padding-bottom: 10px;
+            }
+        }
+
+        .cli {
+            background-image: url('../assets/ionitron.png');
+            background-size: 500px;
+            background-position: bottom left;
+            background-repeat: no-repeat;
+            section{
+                margin-top: 0;
+                padding-top:0;
+                padding-bottom: 200px;
+                h2{
+                    padding-bottom: 60px;
+                }
+                table{
+                    td{
+                        padding: 20px;
+                        white-space: normal;
+                        span{
+                            background: #232323;
+                            color: #32b83b;
+                            padding: 15px 30px;
+                            width: 320px;
+                            display: inline-block;
+                            font-family: 'calibri';
+                            word-spacing: .3em;
+                            border-radius: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .cli2{
+            table{
+                td{
+                    span{
+                        width: 560px!important;
+                    }
+                    
+                }
+                tr{
+                    &:last-of-type td{
+                        text-align:right;
+                    }
+                }
+            }
+        }
+
+        .pro {
+            background: #6d23ab;
+        }
+
+        .pwa {
+            img{
+                max-height: 150px;
+            }
+            ul{
+                list-style: none;
+            }
+            h3{
+                color: #3374de;  
+                font-weight: bold;
+            }
+        }
+
+        .stencil{
+            background-color: #16171c!important;
+            background-image: url('../assets/stencil.png');
+            background-size: cover;
+            background-position: bottom left;
+            background-repeat: no-repeat;
+        }
+
+        .stencil2{
+            background-color: #16171c!important;
+            color: #fff;
+            img{
+                height: 200px;
+                &:first-of-type{
+                    height: 150px;
+                    padding-bottom:40px;
+                    margin-right: 50px;
+                }
+            }
+        }
+    }
 }
